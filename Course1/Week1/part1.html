@@ -9,6 +9,61 @@
     <body>
         <h2>Please Enter Your Details For Our Dating Website!</h2>
         
+        <form action="http://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php" method="post" enctype="multipart/form-data">
+            <!-- first fieldset-->
+            <fieldset>
+            <legend>Your Face</legend>
+                
+                <!-- zdjęcie -->
+                <label for="photo">Your image</label>
+                <input type="file" id="photo" name="photo" >
+                </br>
+                
+                <!-- podgląd zjęcia-->
+                <label for="preview">Image preview:</label>
+                
+                
+            </fieldset>
+        
+            <!--second fieldset-->
+            <fieldset>
+                <legend>Your General Details</legend>
+                <!-- name-->
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your full name">
+                <br>
+                
+                <!-- gender-->
+                <lable for="gender">Gender:</lable>
+                <input type="radio" id="gender" name="gender" value="male">Male
+                <input type="radio" id="gender" name="gender" value="female">Female
+                <br>
+                
+                <!--age-->
+                <lable for="age">Age:</lable>
+                <input type="number" id="age" name="age" value="18">
+                <br>
+                
+                <!--birth-->
+                <label for="birth">Date of birth:</label>
+                <input type="date" id="birth" name="birth">
+                <br>
+                
+                <!--color-->
+                <label for="color">Favourite color:</label>
+                <input type="color" id="color" name="color">
+                <br>
+                
+                <!--country-->
+                <lable for="country">Which country:</lable>
+                <select name="country">
+                    <option value="Germany">Germany</option>
+                    <option value="USA">USA</option>
+                    <option value="Sweden">Sweden</option>
+                </select>
+            </fieldset>
+        
+        </form>
     
     </body>
 </html>

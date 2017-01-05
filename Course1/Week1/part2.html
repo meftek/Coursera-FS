@@ -1,2 +1,114 @@
 <!DOCTYPE html>
-<htl
+<html>
+    <head>
+        <meta name="description" content="first assignment of Coursera Full Stack Web Development course">
+        <meta name="author" content="meftek">
+    
+    </head>
+    
+    <body>
+        <h2>Please Enter Your Details For Our Dating Website!</h2>
+        
+        <form action="http://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php" method="post" enctype="multipart/form-data">
+            <!-- first fieldset-->
+            <fieldset>
+            <legend>Your Face</legend>
+                
+                <!-- zdjęcie -->
+                <label for="photo">Your image</label>
+                <input type="file" id="photo" name="photo" >
+                </br>
+                
+                <!-- podgląd zjęcia-->
+                <label for="preview">Image preview:</label>
+                <img id="preview">
+                
+                
+            </fieldset>
+        
+            <!--second fieldset-->
+            <fieldset>
+                <legend>Your General Details</legend>
+                <!-- name-->
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your full name" required>
+                <br>
+                
+                <!-- gender-->
+                <lable for="gender">Gender:</lable>
+                <input type="radio" id="gender" name="gender" value="male" required>Male
+                <input type="radio" id="gender" name="gender" value="female" required>Female
+                <br>
+                
+                <!--age-->
+                <lable for="age">Age:</lable>
+                <input type="number" id="age" name="age" value="18" required>
+                <br>
+                
+                <!--birth-->
+                <label for="birth">Date of birth:</label>
+                <input type="date" id="birth" name="birth">
+                <br>
+                
+                <!--color-->
+                <label for="color">Favourite color:</label>
+                <input type="color" id="color" name="color">
+                <br>
+                
+                <!--country-->
+                <lable for="country">Which country:</lable>
+                <select name="country">
+                    <option value="none"></option>
+                    <option value="Germany">Germany</option>
+                    <option value="USA">USA</option>
+                    <option value="Sweden">Sweden</option>
+                    <option value="Poland">Poland</option>
+                    <option value="Italy">Italy</option>
+                    
+                </select>
+            </fieldset>
+            
+            <!-- third fieldset-->
+            <fieldset>
+                <legend>Your Indicators</legend>
+                
+                <!--height & salary-->
+                <label for="height">Height:</label>
+                Short<input type="range" min="0" max="100" step="10" value="50" id="height" name="height">Tall
+                <br>
+                
+                <label for="salary">Salary:</label>
+                Poor<input type="range" min="0" max="100" step="10" value="50" id="salary" name="salary">Rich
+            </fieldset>
+        
+            <!-- fourth fieldset-->
+            <fieldset>
+                <legend>Your Contact Information</legend>
+                
+                <!--mail-->
+                <label for="mail">Email:</label>
+                <input type="email" id="mail" name="mail" required>
+                <br>
+                
+                <!--phone num-->
+                <label for="mobile">Mobile:</label>
+                <input type="tel" id="mobile" name="mobile">
+                <br>
+                
+                <!-- address-->
+                <label for="address">Address:</label>
+                <textarea rows="3" cols="60" id="address" name="address">
+                </textarea>
+                <br>
+                
+                <!-- how to contact-->
+                <label for="how">Method to contact you:</label>
+                <input type="checkbox" id="how" name="how" value="email"> Email
+                <input type="checkbox" id="how" name="how" value="whatsapp"> Whatsapp
+                <input type="checkbox" id="how" name="how" value="inappchat"> In-app chat<br>
+            </fieldset>
+            <input type="submit">
+        </form>
+    
+    </body>
+</html>

@@ -21,6 +21,7 @@
                 
                 <!-- podgląd zjęcia-->
                 <label for="preview">Image preview:</label>
+                <img id="preview">
                 
                 
             </fieldset>
@@ -30,18 +31,18 @@
                 <legend>Your General Details</legend>
                 <!-- name-->
                 <label for="name">Name:</label>
-                <input type="text" id="name" name="name" placeholder="Your full name">
+                <input type="text" id="name" name="name" placeholder="Your full name" required>
                 <br>
                 
                 <!-- gender-->
                 <lable for="gender">Gender:</lable>
-                <input type="radio" id="gender" name="gender" value="male">Male
-                <input type="radio" id="gender" name="gender" value="female">Female
+                <input type="radio" id="gender" name="gender" value="male" required>Male
+                <input type="radio" id="gender" name="gender" value="female" required>Female
                 <br>
                 
                 <!--age-->
                 <lable for="age">Age:</lable>
-                <input type="number" id="age" name="age" value="18">
+                <input type="number" id="age" name="age" value="18" required>
                 <br>
                 
                 <!--birth-->
@@ -57,9 +58,13 @@
                 <!--country-->
                 <lable for="country">Which country:</lable>
                 <select name="country">
+                    <option value="none"></option>
                     <option value="Germany">Germany</option>
                     <option value="USA">USA</option>
                     <option value="Sweden">Sweden</option>
+                    <option value="Poland">Poland</option>
+                    <option value="Italy">Italy</option>
+                    
                 </select>
             </fieldset>
             
@@ -82,12 +87,12 @@
                 
                 <!--mail-->
                 <label for="mail">Email:</label>
-                <input type="email" id="mail" name="mail">
+                <input type="email" id="mail" name="mail" required>
                 <br>
                 
                 <!--phone-->
                 <label for="mobile">Mobile:</label>
-                <input type="number" id="mobile" name="mobile">
+                <input type="tel" id="mobile" name="mobile">
                 <br>
                 
                 <!-- address-->
@@ -102,6 +107,7 @@
                 <input type="checkbox" id="how" name="how" value="whatsapp"> Whatsapp
                 <input type="checkbox" id="how" name="how" value="inappchat"> In-app chat<br>
             </fieldset>
+            <input type="submit">
         </form>
     
     </body>
